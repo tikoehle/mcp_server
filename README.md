@@ -128,6 +128,13 @@ Proxy server listening on port 3000
 🔍 MCP Inspector is up and running at http://localhost:5173 🚀
 ```
 
+**Note:**
+
+Another method to install the latest version and start the Inspector.
+```
+mcp_server$ npx @modelcontextprotocol/inspector@latest
+```
+
 ### Open the MCP Inspector client UI in the Browser
 
 ```
@@ -143,6 +150,12 @@ Transport Type, Command and Arguments appeared with the correct parameters when 
 Transport Type: STDIO
 Command: uv
 Arguments: run --with mcp mcp run ./weather_stdio.py
+```
+or
+
+```
+Transport Type: SSE
+URL: http://comp9:8001/sse
 ```
 
 **Note:**
@@ -163,5 +176,5 @@ mcp_server$ uv run weather_sse.py      # port 8001
 
 Client
 ```
-mcp_client$ uv run client_sse.py http://localhost:8001/sse
+mcp_client$ uv run client_sse.py http://comp9:8001/sse
 ```
