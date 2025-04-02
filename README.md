@@ -178,3 +178,13 @@ Client
 ```
 mcp_client$ uv run client_sse.py http://comp9:8001/sse
 ```
+
+
+## Python-SDK
+
+https://github.com/modelcontextprotocol/python-sdk/
+
+SSE Issues:
+
+https://github.com/modelcontextprotocol/python-sdk/issues/398
+
